@@ -33,10 +33,19 @@ This extension is for that.
     (1 row)
 
 
+    =# SELECT unnest(postal_parse(postal_normalize('412 first ave, victoria, bc')));
+
+                                             unnest                                             
+    ------------------------------------------------------------------------------------------------
+     {"city": "victoria", "road": "1st avenue", "state": "british columbia", "house_number": "412"}
+     {"city": "victoria", "road": "1st avenue", "state": "bc", "house_number": "412"}
+    (2 rows)
+
 ## Functions
 
 * `postal_normalize(address TEXT)` returns `TEXT[]`
 * `postal_parse(address TEXT)` returns `JSONB`
+* `postal_parse(address TEXT[])` returns `JSONB[]`
 
 
 ## Installation
