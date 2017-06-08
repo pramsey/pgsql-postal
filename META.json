@@ -21,9 +21,9 @@
    },
    "provides": {
      "postal": {
-       "file": "postal--1.0.sql",
+       "file": "postal--1.1.sql",
        "docfile": "README.md",
-       "version": "1.0",
+       "version": "1.1",
        "abstract": "Postal address standardizer"
      },
    },

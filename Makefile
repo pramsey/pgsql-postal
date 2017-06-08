@@ -2,7 +2,7 @@
 MODULE_big = postal
 OBJS = postal.o
 EXTENSION = postal
-DATA = postal--1.0.sql
+DATA = postal--1.1.sql postal--1.0--1.1.sql
 REGRESS = postal
 EXTRA_CLEAN =
 
